@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Pratham M S, AIML Engineering student." />
+  <title>Pratham M S | AIML Portfolio</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#121a2d; --text:#eef3ff; --muted:#aab6d3;
+      --accent:#7c9cff; --accent2:#61e6c2; --border:#24304d;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#0b1020 0%,#0e1528 100%);color:var(--text);
+      line-height:1.6
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1050px;margin:auto;padding:0 22px}
+    nav{
+      position:sticky;top:0;z-index:10;background:rgba(11,16,32,.86);
+      backdrop-filter:blur(12px);border-bottom:1px solid var(--border)
+    }
+    nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .navlinks{display:flex;gap:18px;font-size:14px;color:var(--muted)}
+    .hero{padding:90px 0 70px}
+    .eyebrow{color:var(--accent2);font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(44px,8vw,82px);line-height:1.02;margin:12px 0 14px;max-width:800px}
+    .hero p{font-size:20px;color:var(--muted);max-width:760px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:12px 18px;border-radius:12px;border:1px solid var(--border);font-weight:700}
+    .btn.primary{background:var(--accent);color:#08101f;border-color:transparent}
+    section{padding:58px 0}
+    h2{font-size:30px;margin:0 0 22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:rgba(18,26,45,.82);border:1px solid var(--border);border-radius:18px;
+      padding:22px;box-shadow:0 12px 36px rgba(0,0,0,.18)
+    }
+    .card h3{margin:0 0 10px;font-size:20px}
+    .card p{color:var(--muted);margin:0}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .tag{font-size:12px;padding:6px 9px;border-radius:999px;background:#182440;color:#cad6f4;border:1px solid var(--border)}
+    .two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#111a30}
+    .timeline p{margin:5px 0;color:var(--muted)}
+    footer{padding:42px 0 58px;color:var(--muted);text-align:center}
+    @media(max-width:800px){
+      .grid,.two{grid-template-columns:1fr}
+      .navlinks{display:none}
+      .hero{padding-top:64px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div class="brand">Pratham M S</div>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">AI & Machine Learning Engineering Student</div>
+      <h1>Building practical AI systems and learning by doing.</h1>
+      <p>
+        I’m Pratham M S, a B.E. Artificial Intelligence & Machine Learning student in Mysuru,
+        interested in machine learning, generative AI, cybersecurity, and building useful software projects.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://www.linkedin.com/in/pratham-shiva-70a61a281" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/prathamms" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="two">
+        <div class="card">
+          <p>
+            I am an AIML engineering student with a foundation in Python, DBMS, OOP, SQL, Git/GitHub,
+            machine learning, and generative AI. I enjoy understanding how intelligent systems work and
+            turning concepts into projects that solve real problems.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Currently Exploring</h3>
+          <div class="skills">
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Generative AI</span>
+            <span class="skill">RAG</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Emotion Detection using Machine Learning</h3>
+          <p>
+            Built during an internship at Softflix, Mysuru. Explored machine-learning techniques
+            for identifying emotional patterns from input data.
+          </p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Data Analysis</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Cyber Threat Detection using Suricata</h3>
+          <p>
+            A cybersecurity mini-project focused on network threat detection using Suricata,
+            intrusion-detection concepts, and rule-based traffic monitoring.
+          </p>
+          <div class="tags"><span class="tag">Suricata</span><span class="tag">Cybersecurity</span><span class="tag">Network Security</span></div>
+        </article>
+
+        <article class="card">
+          <h3>RAG Chatbot</h3>
+          <p>
+            Designed a Retrieval-Augmented Generation chatbot pipeline using Claude,
+            SentenceTransformer embeddings, a FastAPI backend, and a React + Vite frontend.
+          </p>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Embeddings</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">Python Basics</span>
+          <span class="skill">DBMS Basics</span>
+          <span class="skill">OOP Concepts</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Git & GitHub</span>
+          <span class="skill">Machine Learning</span>
+          <span class="skill">Generative AI</span>
+          <span class="skill">FastAPI</span>
+          <span class="skill">React + Vite</span>
+          <span class="skill">Suricata</span>
+          <span class="skill">VS Code</span>
+          <span class="skill">Google Colab</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card timeline">
+        <h3>B.E. Artificial Intelligence & Machine Learning</h3>
+        <p>Mysore University School of Engineering, University of Mysore</p>
+        <p>Mysuru, Karnataka</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:prathamshiva56@gmail.com">prathamshiva56@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pratham-shiva-70a61a281" target="_blank">https://www.linkedin.com/in/pratham-shiva-70a61a281</a></p>
+        <p>GitHub: <a href="https://github.com/prathamms" target="_blank">https://github.com/prathamms</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Pratham M S · AIML Portfolio</div>
+  </footer>
+</body>
+</html>
